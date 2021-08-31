@@ -1,0 +1,13 @@
+/* pages/demo09/demo09.wxss */
+swiper{
+    width: 100%;
+    height: calc(100vw*375/120);
+}
+image{
+    width: 100%;
+}
+
+.wx-swiper-dots {
+    position: relative;
+    top:90px;
+}

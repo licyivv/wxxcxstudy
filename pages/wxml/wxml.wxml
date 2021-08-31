@@ -1,0 +1,9 @@
+<!-- <button size="mini" bindtap="handleSwitchColor">切换颜色</button> -->
+<!-- <view class='box {{isActive ? "active" : ""}}'>hhh</view> -->
+
+<template name="contentItem">
+  <button>{{btnText}}</button>
+  <view>{{content}}</view>
+</template>
+
+<template is="contentItem" data="{{btnText: '按钮',content:'hh'}}"/>

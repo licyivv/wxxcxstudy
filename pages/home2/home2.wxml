@@ -1,0 +1,23 @@
+<!--pages/home2/home2.wxml-->
+<view><text class="title">hello world</text>
+<button size="mini">按钮</button></view>
+
+<!-- 1.Toast -->
+<button size="mini" bindtap="handleshowToast">showToast</button>
+
+<!-- 2.Modal -->
+<button size="mini" bindtap="handleshowModal">showModal</button>
+
+<!-- 3.Loading -->
+<button size="mini" bindtap="handleshowLoad">showLoad</button>
+
+<!-- actionSheet -->
+<button size="mini" bindtap="handleshowAct">showAction</button>
+
+
+<!-- 分享按钮 -->
+<button open-type="share">分享</button>
+
+<button size="mini" bindtap="handleBack">代码返回</button>
+
+

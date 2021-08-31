@@ -1,0 +1,18 @@
+<!--pages/home3/home3.wxml-->
+
+<!-- 页面跳转 -->
+<navigator url="/pages/home1/home1" >页面跳转</navigator>
+
+<!-- open-type属性 -->
+<navigator url="/pages/home2/home2" open-type="redirect">跳转（redirect）</navigator>
+<navigator url="/pages/img/img" open-type="switchTab">跳转（switchTab）</navigator>
+
+<!-- 跳转过程中数据的传递 -->
+<!-- 首页往详情页中传递数据 -->
+<navigator url="/pages/demo09/demo09?name=juju&age=18&height=1.88">数据传递</navigator>
+<view>{{title}}</view>
+
+<!-- 通过代码进行跳转  -->
+<button size="mini" bindtap="handlePush">代码跳转</button>
+
+

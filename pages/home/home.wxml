@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<view class="box"
+        bind:touchstart="handleTouchStart"
+          bind:touchmove="handleTouchmove"
+            bind:touchend="handelTouchend"
+              bind:tap="handleTap"
+                bind:longpress="handleLongpress"  ></view>
+
+<!-- 事件的传递参数 -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="index" >
+  <view class="item" bindtap="handleItemClick" data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+  </block>  
+</view>
+
+<!-- 事件冒泡和捕获 -->
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleBindView2">
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleBindView3"></view>
+  </view>
+</view>
+

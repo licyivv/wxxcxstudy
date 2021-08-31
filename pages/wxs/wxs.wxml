@@ -1,0 +1,20 @@
+<!--pages/wxs/wxs.wxml-->
+<wxs module="info">
+// js代码
+  var message = "helloworld";
+  var name = "juju";
+
+  var sum = function(num1,num2){
+    return num1+num2;
+  }
+// commonjs模块化导出 
+  module.exports = {
+    message:message,
+    name:name,
+    sum:sum
+  }
+</wxs>
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(20,30)}}</view>

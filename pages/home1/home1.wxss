@@ -1,0 +1,16 @@
+/* pages/home1/home1.wxss */
+.title{
+  color: red;
+}
+
+.red{
+  color: red;
+}
+
+.skyblue{
+  color: skyblue;
+}
+
+.purple{
+  color: purple;
+}

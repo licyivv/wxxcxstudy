@@ -1,0 +1,9 @@
+/* pages/demo05/demo05.wxss */
+view{
+    /* width: 200rpx; */
+    height: 200rpx;
+    background-color: #f0f;
+    font-size: 40rpx;
+
+    width: calc(375px*100/375);
+}

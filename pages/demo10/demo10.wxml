@@ -1,0 +1,4 @@
+<navigator url="/pages/demo09/demo09">轮播图界面</navigator>
+<navigator url="/pages/index/index">首页</navigator>
+<navigator open-type="redirect" url="/pages/demo09/demo09">首页</navigator>
+<navigator open-type="switchTab" url="/pages/index/index">首页</navigator>

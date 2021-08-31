@@ -1,0 +1,46 @@
+<!--pages/home1/home1.wxml-->
+
+<!-- 
+  使用自定义组件
+  <my-cpn></my-cpn> 
+-->
+
+
+<!-- 给自定义组件传递数据/样式 -->
+<my-prop title="hhh" titleclass="red"/>
+<my-prop title="aaa" titleclass="skyblue"/>
+<my-prop title="hha" titleclass="purple"/>
+
+<!-- 使用组件内部发出事件 -->
+<view>当前计数:{{count}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}"
+                bind:itemClick="handletabClick"/>
+
+<!-- 直接选中组件修改数据/调用方法 -->
+<button size="mini" bindtap="handleIncrementCpn">组件内数据+1</button>
+<my-sel class="sel-class"/>
+
+<view>-------------------</view>
+
+          <!-- 插槽的使用 -->
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <button size="mini">我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+  <slider value="60"></slider>
+</my-slot>
+<view>------------</view>
+
+<!-- 多个插槽的使用 -->
+<block wx:if="{{submit}}">
+<my-mslot>
+  <button size="mini" slot="slot2" bindtap="handleChangeShow">切换显示</button>
+  <slider slot="slot1"/>
+  <text slot="slot3">hhhhh</text>
+</my-mslot>
+</block>

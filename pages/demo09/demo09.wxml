@@ -1,0 +1,11 @@
+<swiper indicator-dots="true" autoplay interval="1000" circular indicator-color="skyblue"  >
+        <swiper-item><image mode="widthFix" 
+        src="https://gtms04.alicdn.com/tps/i4/TB1pgxYJXXXXXcAXpXXrVZt0FXX-640-200.jpg"/>
+        </swiper-item>
+        <swiper-item><image mode="widthFix" 
+        src="//img.alicdn.com/imgextra/i2/2206686532409/O1CN01m8jzHF1TfMoekh5Sa_!!2206686532409-0-lubanimage.jpg"/>
+        </swiper-item>
+        <swiper-item><image mode="widthFix" 
+        src="//img.alicdn.com/imgextra/i3/2206686532409/O1CN01exBQ7O1TfMoZjvNDV_!!2206686532409-0-lubanimage.jpg"/>
+        </swiper-item>
+</swiper>

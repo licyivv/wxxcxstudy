@@ -1,0 +1,12 @@
+/* 定义less变量 */
+/* 使用变量 */
+text {
+  color: yellow;
+}
+view .vie1 text {
+  color: red;
+}
+/* 引入指定颜色 */
+view {
+  color: green;
+}
